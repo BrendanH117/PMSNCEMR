@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> PMSNC Submission Form </title>
+	</head>
+	<body>
+	<style>
+	body {
+	-moz-transform: scale(1.3); /* for Firefox, default 1*/
+	zoom:130%; /* For Chrome, IE, default 100%*/}
+	</style>
+	<form action="/new_patient.php" method="post">
+
+		Last Name:
+		<input type="text" name="lastname" required>
+		First Name:
+		<input type="text" name="firstname" required>
+
+		<br><br>
+		Barangay:
+		<input type="text" name="neighborhood" required>
+		Contact Info:
+		<input type="text" name="contactinfo" required>
+
+		<br><br>
+
+		Date of Birth:
+		<input type="text" name="age" required>
+		Sex:
+		<input type="radio" name="sex" value="Male" required> Male
+		<input type="radio" name="sex" value="Female" required> Female
+
+		<br><br>
+
+		BP:
+		<input type="text" name="BP" required>
+		HR:
+		<input type="text" name="HR" required>
+		Temp:
+		<input type="text" name="temp" required>
+
+		<br><br>
+		
+		Height (in meters):
+		<input type="text" name="height" required>
+		Weight:
+		<input type="text" name="weight" required>
+
+		<br><br>
+		
+		Allergies:
+		<input type="text" name="allergies" required>
+		LMP:
+		<input type="text" name="LMP">
+		<br><br>
+
+		Chief Complaint:
+		<input type="text" name="chiefcomplaint" required>
+
+		<br><br>
+
+		<input type="submit"
+		value="Submit">
+	</form>
+	<br>
+	Note: If a field must be left empty, please write "NA"
+	</body>
+</html>
